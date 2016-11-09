@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <com.practice.MyDrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:orientation="vertical">
+            <include layout="@layout/drawerlayout_content"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/darkenOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AABBCCDD"
+            android:clickable="false" />
+
+        <LinearLayout
+            android:id="@+id/menuContainer"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="-150dp"
+            android:background="@android:color/holo_orange_light"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorAccent"
+                android:gravity="bottom|right"
+                android:padding="20dp"
+                android:text="Menu"
+                android:textSize="30sp" />
+
+
+            <Button
+                android:id="@+id/menuItem0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="item 0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menuItem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="item 1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menuItem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="item 2"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </com.practice.MyDrawerLayout>
+
+
+</LinearLayout>

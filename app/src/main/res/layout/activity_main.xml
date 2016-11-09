@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.practice.LeftDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.practice.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center"
+        android:clickable="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/id_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello world"
+            android:textSize="40sp" />
+        <Button
+            android:id="@+id/openDrawerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Drawer"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/id_container_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+</com.practice.LeftDrawerLayout>
